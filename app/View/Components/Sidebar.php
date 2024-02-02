@@ -22,22 +22,14 @@ class Sidebar extends Component
     {
         $userCount = User::count();
         view()->share('userCount',$userCount);
-        
+
         $RoleCount = Role::count();
         view()->share('RoleCount',$RoleCount);
-        
+
         $PermissionCount = Permission::count();
         view()->share('PermissionCount',$PermissionCount);
-        
-        $CategoryCount = Category::count();
-        view()->share('CategoryCount',$CategoryCount);
-        
-        $SubCategoryCount = SubCateory::count();
-        view()->share('SubCategoryCount',$SubCategoryCount);
-        
-   
-        $ProductCount = Product::count();
-        view()->share('ProductCount',$ProductCount);
+
+
     }
 
     /**
