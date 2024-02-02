@@ -4,7 +4,7 @@
 - For Install you have to clone this repo or you can fire this command as well.
 
 ```php
-[git clone https://github.com/ZalaNihir/adminlte-laravel10.git](https://github.com/nikhilmv/vividreal.git)
+ clone the project
 ```
  
 - After the installation you have to update the vendor folder you can update the vendor folder using this command.
