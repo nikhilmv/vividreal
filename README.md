@@ -56,8 +56,8 @@ Logi api
 End point :  http://127.0.0.1:8000/api/login
 Request : 
 {
-Email : testadmin@gmail.com
-Password: p$ssw#rd
+Email : admin@admin.com
+Password: password
 }
 Response:
 {
