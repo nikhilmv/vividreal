@@ -46,3 +46,40 @@ password: ```password```
 
 email: ```testuser@gmail.com```
 password: ```password```
+
+
+
+Postman documentation for API’a
+
+Logi api
+End point :  http://127.0.0.1:8000/api/login
+Request : 
+{
+Email : testadmin@gmail.com
+Password: p$ssw#rd
+}
+Response:
+{
+    "status": "success",
+    "message": "User is logged in successfully.",
+    "access_token": "3|0MOI2OVWXl8Iyt0IoaZt6x8fHcLcY9FDvZLID4Y10edd1533",
+    "token_type": "Bearer"
+}
+
+
+Get usr information api
+
+End point :  http://127.0.0.1:8000/api/login
+Request : 
+Add bearer token 
+Response:
+{
+    "status": "success",
+    "message": "User is logged in successfully.",
+    "access_token": "3|0MOI2OVWXl8Iyt0IoaZt6x8fHcLcY9FDvZLID4Y10edd1533",
+    "token_type": "Bearer"
+}
+
+
+
+
