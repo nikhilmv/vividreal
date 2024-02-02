@@ -51,6 +51,7 @@ password: ```password```
 
 Postman documentation for API’a
 
+```php
 Logi api
 End point :  http://127.0.0.1:8000/api/login
 Request : 
@@ -65,8 +66,11 @@ Response:
     "access_token": "3|0MOI2OVWXl8Iyt0IoaZt6x8fHcLcY9FDvZLID4Y10edd1533",
     "token_type": "Bearer"
 }
+```
 
 
+
+```php
 Get usr information api
 
 End point :  http://127.0.0.1:8000/api/login
@@ -79,7 +83,7 @@ Response:
     "access_token": "3|0MOI2OVWXl8Iyt0IoaZt6x8fHcLcY9FDvZLID4Y10edd1533",
     "token_type": "Bearer"
 }
-
+```
 
 
 
