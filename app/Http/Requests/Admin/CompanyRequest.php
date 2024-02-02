@@ -25,22 +25,24 @@ class CompanyRequest extends FormRequest
      * @return array
      */
     public function rules()
-    {        
+    {
         $request = [];
-        if($this->method() == 'POST'){  
-            $request['name'] = 'required|max:255';  
-            $request['website'] = 'url';   
+        if($this->method() == 'POST'){
+            $request['name'] = 'required|max:255';
+            $request['website'] = 'url';
             $request['email'] = 'unique:company,email|required|max:50|email|regex:/^[a-zA-Z]+(.*)@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/';
-            $request['logo'] = 'required';   
-          
-        } else { 
-            $request['first_name'] = 'required|max:255'; 
-            $request['website'] = 'url';    
+            $request['logo'] = 'nullable|image|dimensions:min_width=100,min_height=100|mimes:jpeg,jpg,png,gif';
+
+
+
+        } else {
+            $request['first_name'] = 'required|max:255';
+            $request['website'] = 'url';
             $request['email'] = 'unique:company,email,'.$this->id.'|required|max:50|email|regex:/^[a-zA-Z]+(.*)@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/';
-            $request['logo'] = 'required';   
-         
+            $request['logo'] = 'required';
+
         }
-       
+
         return $request;
     }
     /**
@@ -51,7 +53,7 @@ class CompanyRequest extends FormRequest
     public function messages()
     {
         return [
-            
+
         ];
     }
 }
